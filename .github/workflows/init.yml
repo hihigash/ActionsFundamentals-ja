@@ -17,10 +17,10 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh issue create -t "❓ What is your experience with GitHub?" -b "What is your experience with GitHub? Whats is your experience with other CI/CD tools? Comment below 👇"
-          gh issue create -t "❓ What do you want to learn?" -b "What is it you want to learn? What specific scenarios are you interrested in? Comment below 👇"
-          gh issue create -t "🔍 Retro Day one: What was good?" -b "What did you like on day one of this course? What was good? Comment below 👇"
-          gh issue create -t "🔍 Retro Day one: What can be improved?" -b "What can be improved? What was missing? Any additional comments? Comment below 👇"
-          gh issue create -t "❤️ What was the best feature you learned yesterday?" -b "What was the GitHub Actions feature you liked best that you have learned about yesterday the first time? If you want add your hobby to share it with the group. Comment below 👇"        
-          gh issue create -t "🔍 Retro Day two: What was good?" -b "What did you like on day two of this course? What was good? Comment below 👇"
-          gh issue create -t "🔍 Retro Day two: What can be improved?" -b "What can be improved? What was missing? Any additional comments? Comment below 👇"
+          gh issue create -t "❓ GitHubの使用経験は？" -b "GitHubの使用経験は？他のCI/CDツールの経験は？ 以下にコメントしてください 👇"
+          gh issue create -t "❓ 何を学びたいですか？" -b "何を学びたいですか？具体的にどんなシナリオに興味がありますか？ 以下にコメントしてください 👇"
+          gh issue create -t "🔍 1 日目のふりかえり: 何が良かったですか？" -b "このコースの 1 日目の内容について、何が良かったですか？ 以下にコメントしてください 👇"
+          gh issue create -t "🔍 1 日目のふりかえり: 改善点はありますか？" -b "改善点、何が足りなかったと感じるポイントはありますか？以下にコメントしてください 👇"
+          gh issue create -t "❤️ 昨日初めて知った機能で一番気に入ったものは何ですか？" -b "昨日初めて知った GitHub Actions の機能の中で一番気に入ったものは何ですか？もしよろしければ、あなたの趣味を追加してグループで共有してください。以下にコメントしてください 👇"
+          gh issue create -t "🔍 2 日目のふりかえり: 何が良かったですか？" -b "このコースの 1 日目の内容について、何が良かったですか？ 以下にコメントしてください 👇"
+          gh issue create -t "🔍 2 日目のふりかえり: 改善点はありますか？" -b "改善点、何が足りなかったと感じるポイントはありますか？以下にコメントしてください 👇"

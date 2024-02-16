@@ -1,70 +1,68 @@
-# GitHub Actions Fundamentals
+# GitHub Actions Fundamentals (日本語)
 
-Repo for the `GitHub Actions Fundamentals` training.
+`GitHub Actions Fundamentals` トレーニング用のリポジトリです。
 
-## 👉 Objectives
+## 👉目的
 
-- Understand the __basic components__ and vocabulary of GitHub Actions
-- Understand the __YAML__ syntax (scalar types, quotes, literal blocks, maps, and sequences)
-- Understand the __workflow syntax__ and how to write workflows using intellisense
-- Understand events that can __trigger__ workflows
-- Learn the __context and expression syntax__ as well as workflow commands
-- Know the different types of __actions__ and how to create/publish them
-- Understand the different hosting options for __runners__
-- Use __Secrets__ and __Environments__ for staged deployments
-- Workflow templates and __reusable workflows__
+- GitHub Actions の __基本要素__ と用語を理解する
+- __YAML__ の構文を理解する (スカラー型、引用符、リテラル ブロック、マップ、シーケンス)
+- __ワークフロー構文__ を理解し、インテリセンスを使ってワークフローを書く方法を理解する
+- ワークフローを __トリガー__ できるイベントを理解する
+- ワークフローコマンドだけでなく、 __コンテキストと式の構文__ を学ぶ
+- __アクション__ の種類と作成/公開方法を理解する
+- __ランナー__ の様々なホスティング オプションを理解する
+- __Secrets__ と __Environments__ を使用した段階的デプロイメント
+- ワークフロー テンプレートと __再利用可能なワークフロー__
 
-## Getting ready
+## 準備
 
-Please follow [these instructions](GettingReady.md) and make sure you have set up everything correctly following the [prerequisites](#-prerequisites).
+[以下の手順](GettingReady.md)に従い、[前提条件](#-prerequisites)に従って正しくセットアップされていることを確認してください。
 
-## 📆 Agenda
+## 📆 アジェンダ
 
-### Day 1: 🚀 Getting started
+### 1日目: 🚀 はじめに
 
-- [ ] Introduction and Icebreaker
-- [ ] GitHub Actions Fundamentals
-- [ ] The YAML syntax
-- [ ] Basic workflow syntax
-- [ ] Events that trigger workflow
-- [ ] Jobs and steps
-- [ ] :mag: Demo: Creating a workflow
-- [ ] 🔨 Hands-on: [My first Action workflow](hol/01-My-first-workflow.md)
-- [ ] Advanced [workflow syntax](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)
-- [ ] :coffee: Break
-- [ ] GitHub Actions
-- [ ] Types of Actions
-- [ ] 🔨 Hands-on: [My first container Action](hol/02-My-first-action.md)
-- [ ] Typescript and composite actions
-- [ ] Sharing and releasing actions
-- [ ] Using the GitHub API and Octokit
-- [ ] Job descriptions
+- [ ] イントロダクションとアイスブレイク
+- [ ] GitHub アクションの基礎
+- [ ] YAML 構文
+- [ ] ワークフローの基本構文
+- [ ] ワークフローのトリガーとなるイベント
+- [ ] ジョブとステップ
+- [ ] :mag: デモワークフローの作成
+- [ ] 🔨ハンズオン: [初めてのアクションワークフロー](hol/01-My-first-workflow.md)
+- [ ] [ワークフロー構文](https://docs.github.com/ja/actions/using-workflows/workflow-syntax-for-github-actions)
+- [ ] :coffee: 休憩
+- [ ] GitHub アクション
+- [ ] アクションの種類
+- [ ] 🔨ハンズオン: [初めてのコンテナアクション](hol/02-My-first-action.md)
+- [ ] TypeScript と複合アクション
+- [ ] アクションの共有とリリース
+- [ ] GitHub API と Octokit を使う
+- [ ] ジョブの説明
 
-### Day 2
-- [ ] Introduction
-- [ ] Actions for CI/CD
-- [ ] Permissions for GitHub Token
-- [ ] Environments and Secrets
-- [ ] Staged deployments with environments, approvals, and deployment gates
-- [ ] 🔨 Hands-on: [Staged deployments](hol/03-Staged-deployments.md)
-- [ ] :coffee: Break
-- [ ] Action policies
-- [ ] Running your workflows
-- [ ] Sharing workflows
-- [ ] 🔨 Hands-on: [Reusable workflows](hol/04-Reusable-workflows.md)
-- [ ] Best practices and security
+### 2日目
+- [ ] はじめに
+- [ ] CI/CD のためのアクション
+- [ ] GitHub トークンのパーミッション
+- [ ] 環境とシークレット
+- [ ] 環境、承認、デプロイメント ゲートによる段階的デプロイメント
+- [ ] ハンズオン: [段階的デプロイメント](hol/03-Staged-deployments.md)
+- [ ] :coffee: 休憩
+- [ ] アクション ポリシー
+- [ ] ワークフローの実行
+- [ ] ワークフローの共有
+- [ ] ハンズオン: [再利用可能なワークフロー](hol/04-Reusable-workflows.md)
+- [ ] ベストプラクティスとセキュリティ
 
+## ⚡ 前提条件
 
-## ⚡ Prerequisites
+このワークショップは、Azure DevOps、GitLab、Bitbucket などの他のプラットフォームを使っていて、これから GitHub に乗り換えたいと思っている開発者向けにデザインされています。また、git、CI/CD、DevOps などのトピックを初めて学ぶ方にも適しています。
 
-The workshop is designed for developers that have used other platforms like Azure DevOps, GitLab, or Bitbucket and now want to switch to GitHub. But it is also suitable for people that are new to topics like git, CI/CD, and DevOps.
+このワークショップには以下が必要です:
 
-For this workshop you need the following:
+- ラップトップ (Windows、Mac、Linux)
+- https://github.com の無料アカウント
+- 実習用のセカンド スクリーン (外部ディスプレイ) を用意することをお勧めします。
 
-- A laptop (Windows, Mac, or Linux)
-- A free account for https://github.com
-- It is recommended to have a second screen for the hand-on labs
-
-## Cheat Sheet
-Find common terminology for reference [here](./CheatSheet.md)
-
+## チートシート
+参考となる一般的な用語は[こちら](./CheatSheet.md)

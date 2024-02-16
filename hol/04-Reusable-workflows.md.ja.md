@@ -1,16 +1,16 @@
 # 🔨ハンズオン：再利用可能なワークフロー
 
-この実習では、[再利用可能ワークフロー](https://docs.github.com/en/actions/using-workflows/reusing-workflows#creating-a-reusable-workflow) と、それを消費するワークフローを作成します。再利用可能なワークフローにパラメータを渡し、それを消費するワークフローで出力パラメータを使用する方法を学びます。
+この実習では、[再利用可能ワークフロー](https://docs.github.com/ja/actions/using-workflows/reusing-workflows#creating-a-reusable-workflow) と、それを消費するワークフローを作成します。再利用可能なワークフローにパラメータを渡し、それを消費するワークフローで出力パラメータを使用する方法を学びます。
 
 この実習ラボは以下のステップで構成されます：
-  - [再利用可能なワークフローの作成](#creating-a-reusable-workflow)
-  - [出力パラメータの追加](#adding-an-output-parameter)
-  - [再利用可能ワークフローの消費](#consuming-the-reusable-workflow)
+  - [再利用可能なワークフローの作成](#再利用可能ワークフローの作成)
+  - [出力パラメータの追加](#出力パラメータの追加)
+  - [再利用可能ワークフローの消費](#再利用可能なワークフローを消費する)
 
 ## 再利用可能ワークフローの作成
 
-1. [new file](/../../new/main) `.github/workflows/reusable.yml` を作成します（ファイル名とパスをボックスに貼り付ける）。
-2. ファイル名を `Reusable workflow` とします。
+1. [新しいファイル](/../../new/main) `.github/workflows/reusable.yml` を作成します（ファイル名とパスをボックスに貼り付ける）。
+2. 名前を `Reusable workflow` にします。
 
 <details>
   <summary>解決方法</summary>
@@ -21,7 +21,7 @@ name: Reusable workflow
 
 </details>
 
-3. [input parameter](https://docs.github.com/en/enterprise-cloud@latest/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_call) `who-to-greet` の `string` 型の `workflow_call` トリガーを追加します。デフォルト値を `World` に設定します。
+3. [input parameter](https://docs.github.com/ja/enterprise-cloud@latest/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_call) `who-to-greet` の `string` 型の `workflow_call` トリガーを追加します。デフォルト値を `World` に設定します。
 
 <details>
   <summary>解決方法</summary>
@@ -39,7 +39,7 @@ on:
 
 </details>
 
-4. コンソールに "Hello <input parameter>" とエコーする `ubuntu-latest` 上で実行する `reusable-job` という名前のジョブを追加します。
+4. コンソールに `Hello <input parameter>` とエコーする `ubuntu-latest` 上で実行する `reusable-job` という名前のジョブを追加します。
 
 <details>
   <summary>解決方法</summary>
@@ -58,7 +58,7 @@ jobs:
 
 ## 出力パラメータの追加
 
-1. ワークフローコマンドを使用して `current-time` という出力パラメータを現在の日時に設定します (そのためには `$(date)` を使用します)。
+1. ワークフロー コマンドを使用して `current-time` という出力パラメータを現在の日時に設定します (そのためには `$(date)` を使用します)。
 `current-time` という名前の出力パラメータを現在の日付と時刻に設定します（そのためには `$(date)` を使用します）。
 
 <details>
@@ -84,7 +84,7 @@ jobs:
 
 </details>
 
-3. `workflow_call` に `current-time` という出力パラメータを追加し、ワークフローコマンドの出力に設定します。
+3. `workflow_call` に `current-time` という出力パラメータを追加し、ワークフロー コマンドの出力に設定します。
 
 <details>
   <summary>解決方法</summary>
@@ -135,7 +135,7 @@ jobs:
 
 ## 再利用可能なワークフローを消費する
 
-1. [new file](/../../new/main) `.github/workflows/reuse.yml` を作成します（ファイル名とパスをボックスに貼り付ける）。
+1. [新しいファイル](/../../new/main) `.github/workflows/reuse.yml` を作成します（ファイル名とパスをボックスに貼り付ける）。
 2. 名前を `Reuse other workflow` とし、手動トリガーを追加します。
 
 <details>

@@ -1,11 +1,11 @@
 # 🔨ハンズオン :初めてのワークフロー
 
-このハンズオンでは、初めての GitHub Actions ワークフローを作成し、Actions を使ってソフトウェア開発ライフサイクルのタスクを自動化する方法を学びます。より詳しい情報が必要な場合は、GitHub Docs の [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) ページを参照してください。幸運を祈ります！👍
+このハンズオンでは、初めての GitHub Actions ワークフローを作成し、Actions を使ってソフトウェア開発ライフサイクルのタスクを自動化する方法を学びます。より詳しい情報が必要な場合は、GitHub Docs の [GitHub Actions](https://docs.github.com/ja/actions/learn-github-actions/understanding-github-actions) ページを参照してください。幸運を祈ります！👍
 
 このハンズオンラボは以下のステップで構成されています :
- - [リポジトリの作成](#creating-a-repository)
- - [ワークフローの作成](#creating-the-workflow)
- - [ワークフローの結果を見る](#viewing-your-workflow-results)
+ - [リポジトリの作成](#リポジトリの作成)
+ - [ワークフローの作成](#ワークフローの作成)
+ - [ワークフローの結果を見る](#ワークフローの結果を見る)
 
 ## リポジトリの作成
 
@@ -58,7 +58,7 @@ on:
 </details>
 
 
-6. GitHub hosted runners上の最新のUbuntuイメージで実行するジョブ`Build`を作成する。[仮想環境](https://github.com/actions/virtual-environments/) のドキュメントをチェックして、どのラベルを使うか、どのバージョンかを確認してください。ジョブは以下のことを行う必要があります :
+6. GitHub hosted runners上の最新のUbuntuイメージで実行するジョブ`Build`を作成します。[仮想環境](https://github.com/actions/virtual-environments/) のドキュメントをチェックして、どのラベルを使うか、どのバージョンかを確認してください。ジョブは以下のことを行う必要があります :
   - ワークフローのトリガーとなったイベントの名前を出力する
   - リポジトリが現在参照しているブランチの名前を出力する
   - リポジトリ内のすべてのファイルをリストアップする
@@ -85,28 +85,28 @@ jobs:
 
 </details>
 
-7. ワークフローファイルをコミットし、ワークフローを手動で起動する。パスフィルターが機能していれば、自動的に実行されることはありません。[Action](/../../Actions) に移動し、[GitHub Actions Demo](/../../actions/workflows/github-actions-demo.yml) を選択して `Run workflow` を実行します :
+7. ワークフローファイルをコミットし、ワークフローを手動で起動します。パスフィルターが機能していれば、自動的に実行されることはありません。[Action](/../../Actions) に移動し、[GitHub Actions Demo](/../../actions/workflows/github-actions-demo.yml) を選択して `Run workflow` を実行します :
 
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/5276337/174105162-19f33fd1-8533-4860-9279-88fabec84451.png">
 
 
 ## ワークフローの結果を見る
 
-1. ワークフローの実行をクリックします。 :
+1. ワークフローの実行をクリックします :
 
-<img width="600" alt="image" src="https://user-images.githubusercontent.com/5276337/174105747-0e205e0d-37cc-464c-905b-5b29be74fc75.png">
+    <img width="600" alt="image" src="https://user-images.githubusercontent.com/5276337/174105747-0e205e0d-37cc-464c-905b-5b29be74fc75.png">
 
 2. ジョブの「ビルド」をクリックします :
 
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/5276337/174105990-a1c204c6-fb7d-44a4-9343-6982899edb25.png">
+    <img width="400" alt="image" src="https://user-images.githubusercontent.com/5276337/174105990-a1c204c6-fb7d-44a4-9343-6982899edb25.png">
 
-3. `Set up job`を展開し、行番号のログを記録します（行番号はリンクです）。仮想環境と付属ソフトウェアの情報を確認します :
+3. `Set up job`を展開し、行番号のログをメモします（行番号はリンクです）。仮想環境と付属ソフトウェアの情報を確認します :
 
-<img width="600" alt="image" src="https://user-images.githubusercontent.com/5276337/174106759-c2a8f933-74cf-42a4-899b-b29dc67eccd7.png">
+    <img width="600" alt="image" src="https://user-images.githubusercontent.com/5276337/174106759-c2a8f933-74cf-42a4-899b-b29dc67eccd7.png">
 
 4. ジョブを展開し、出力が正しいことを確認します:
 
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/5276337/174107136-af9187c1-dbee-4109-9ddc-f2abd4830282.png">
+    <img width="400" alt="image" src="https://user-images.githubusercontent.com/5276337/174107136-af9187c1-dbee-4109-9ddc-f2abd4830282.png">
 
 5. [README.md](/README.md)ファイルを修正して、他のトリガーを確認します :
   - トリガーをビルドする (`push`)

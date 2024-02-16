@@ -3,9 +3,9 @@
 このハンズオンラボでは、dockerアクションを作成し、パラメータを渡してワークフローに値を返す方法を学びます。そして、CIビルドを使ってローカルでアクションをテストする方法を学びます。
 
 このハンズオンラボは以下のステップで構成されています :
- - [アクションの作成](#creating-the-action)
+ - [アクションの作成](#アクションの作成)
  - [アクションのテスト](#testing-the-action)
- - オプション: [アクションのリリースと使用](#optional-release-and-use-the-action)
+ - オプション: [アクションのリリースと使用](#オプション-アクションをリリースして使用する)
 
 ## アクションの作成
 
@@ -40,7 +40,7 @@ runs:
 </details>
 
 
-3. ファイルをコミットします (`[skip ci]`でまだビルドを実行しない)。
+3. ファイルをコミットします (`[skip ci]`でビルドの実行をスキップします)。
 4. `hello-world-docker-action` フォルダ内に [`Dockerfile`](/../../new/main?filename=hello-world-docker-action%2FDockerfile) を作成します。コンテナは `FROM alpine:3.10` を継承し、ファイル `entrypoint.sh` をコピーして実行する。スクリプトは `RUN chmod +x entrypoint.sh` で実行可能にすることを忘れずに。
 
 <details>
@@ -65,13 +65,11 @@ ENTRYPOINT ["/entrypoint.sh"]
   <summary>解決方法</summary>
 
 ```dockerfile
-FROM alpine:3.10
+#!/bin/sh -l
 
-COPY entrypoint.sh /entrypoint.sh
+echo "hello $1"
 
-RUN chmod +x entrypoint.sh
-
-ENTRYPOINT ["/entrypoint.sh"]
+echo "time=$(date)" >> $GITHUB_OUTPUT
 ```
 
 </details>

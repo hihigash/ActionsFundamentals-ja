@@ -4,10 +4,10 @@
 > このハンズオン・ラボでは、環境と承認付きの段階的デプロイ ワークフローを作成します。プライベート リポジトリに環境を追加できるのは、Team アカウント（またはそれ以上）を持つ組織と GitHub Pro アカウントを持つユーザーのみです。
 
 このハンズオンラボは、[My first workflow](01-My-first-workflow.md) をベースに以下のステップを追加したものです :
-  - [環境の作成と保護](#creating-and-protecting-environments)
-  - [手動ワークフロートリガーへの環境選択入力の追加](#adding-a-input-for-picking-environments-to-manual-workflow-trigger)
-  - [ワークフローのステップと条件実行の連鎖](#chaining-workflow-steps-and-conditional-execution)
-  - [デプロイのレビューと承認](#reviewing-and-approving-deployments)
+  - [環境の作成と保護](#環境の作成と保護)
+  - [手動ワークフロートリガーへの環境選択入力の追加](#手動ワークフローのトリガーに環境を選択する入力を追加する)
+  - [ワークフローのステップと条件実行の連鎖](#ワークフローのステップの連結と条件実行)
+  - [デプロイのレビューと承認](#デプロイのレビューと承認)
 
 ## 環境の作成と保護
 
